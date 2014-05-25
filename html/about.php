@@ -20,7 +20,7 @@
   </head>
   <body onload=''>
     <?php include 'assets/navbar.html';?>
-    <div class='container' style="width: 760px; margin: 0 auto">
+    <div id="main" class='container' style="width: 760px; margin: 0 auto">
     <h1>About Pulley</h1>
       <div class="panel panel-default">
         <div class="panel-body">
@@ -45,5 +45,21 @@
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootystrap.min.js"></script>
+    
+    <script>
+      $(function() {
+  var $main = $("#main");
+
+  $("a, area").click(function() {
+    var href = $(this).attr("href");
+    console.log("Click");
+
+    history.pushState({}, '', href);
+    $main.load(href + " #main");
+    return false;
+  });
+});
+    </script>
+    
   </body>
 </html>

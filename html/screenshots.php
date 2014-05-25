@@ -20,8 +20,8 @@
   </head>
   <body onload=''>
     <?php include 'assets/navbar.html';?>
-    <div class='container' style="width: 760px; margin: 0 auto">
-    <h1>Features</h1>
+    <div id="main" class='container' style="width: 760px; margin: 0 auto">
+    <h1>Screenshots</h1>
       
       
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -74,5 +74,21 @@
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootystrap.min.js"></script>
+    
+    <script>
+      $(function() {
+  var $main = $("#main");
+
+  $("a, area").click(function() {
+    var href = $(this).attr("href");
+    console.log("Click");
+
+    history.pushState({}, '', href);
+    $main.load(href + " #main");
+    return false;
+  });
+});
+    </script>
+    
   </body>
 </html>

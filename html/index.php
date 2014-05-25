@@ -17,54 +17,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src='js/ajax.functions.js'></script>
-    <script>
-      function fetchCallback(data)
-      {
-        data = $.parseJSON(data);
-        for(var key in data)
-        {
-          var info = data[key];
-          key = '#' + key.replace(/\./g,'_') + '_status';
-          var icon = $(key);
-          if(info['status'] == 'clean')
-          {
-            icon.removeClass('glyphicon-remove');
-            icon.addClass('glyphicon-ok');
-            icon.css('color', '#8CC63F');
-          }
-          else
-          {
-            icon.removeClass('glyphicon-ok');
-            icon.addClass('glyphicon-remove');
-            icon.css('color', '#ED1F24');
-          }
-        }
-        $("#pleaseWaitDialog").modal('hide');
-      }
-      function doPull(domain)
-      {
-        $("#pleaseWaitDialog").modal('show');
-        AJAXPull(domain, function(){AJAXFetch(fetchCallback);});
-      }
-      function doRemove(domain) {
-        disableAndReload(15000);
-        AJAXRemove(domain, function(d){});
-      }
-      function addDomain() {
-        disableAndReload(15000);
-        AJAXInit($("#domain").val(),$("#giturl").val(),$("#branchname").val(),function(d){console.log});
-        return false;
-      }
-      function disableAndReload(timeout) {
-        setTimeout(function() {location.reload();}, timeout);
-        $("#pleaseWaitDialog").modal('show');
-        }
-    </script>
   </head>
-  <body onload='setInterval("AJAXFetch(fetchCallback);", 30000);'>
+  <body>
     <?php include 'assets/navbar.html';?>
-    <div class='container' style="width: 760px; margin: 0 auto">
+    <div id="main" class='container' style="width: 760px; margin: 0 auto">
       <h1>Welcome to Pulley</h1>
 <div class="panel panel-default">
         <div class="panel-body">
@@ -87,6 +43,20 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootystrap.min.js"></script>
   
+    <script>
+      $(function() {
+  var $main = $("#main");
+
+  $("a, area").click(function() {
+    var href = $(this).attr("href");
+    console.log("Click");
+
+    history.pushState({}, '', href);
+    $main.load(href + " #main");
+    return false;
+  });
+});
+    </script>
 
 </body>
 </html>
