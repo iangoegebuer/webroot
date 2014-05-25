@@ -32,10 +32,10 @@
       <div class="panel panel-default">
         <div class="panel-body">
           <h3>Developers</h3>
-          <p><b>Jasmine Ang</b> - Divine artist from beyond</p>
-          <p><b>Ian Goegebuer</b> - Thou art root with many hats</p>
-          <p><b>Christopher Hall</b> - Mr. Balls</p>
-          <p><b>Johnny Patterson</b> - Wat</p>
+          <p><b>Jasmine Ang</b> &mdash; Artistic and Design Lead - Sser experience lead</p>
+          <p><b>Ian Goegebuer</b> &mdash; Webmaster/back end developer - Full stack developer - Marketing lead</p>
+          <p><b>Christopher Hall</b> &mdash; Front end developer - Full stack developer - Music lead</p>
+          <p><b>Johnny Patterson</b> &mdash; Coder - Full stack developer</p>
         </div>
       </div>
     </div>
