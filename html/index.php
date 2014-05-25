@@ -43,20 +43,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootystrap.min.js"></script>
   
-    <script>
-      $(function() {
-  var $main = $("#main");
-
-  $("a, area").click(function() {
-    var href = $(this).attr("href");
-    console.log("Click");
-
-    history.pushState({}, '', href);
-    $main.load(href + " #main");
-    return false;
-  });
-});
-    </script>
+    
 
 </body>
 </html>
