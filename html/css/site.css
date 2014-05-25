@@ -1,0 +1,104 @@
+/*!
+ * Miscellaneous site styles. Load this after bootystrap.
+*/
+.box {
+  background-color: #555D50;
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.property {
+  font-weight: bold;
+  width: 100px;
+}
+
+table td {
+    border-top: none;
+}
+.table tbody th, .table tbody tr td {
+    border-top: none;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: left;        /* adjust as needed */
+    padding-right: 15px;
+    color: white;         /* adjust as needed */
+}
+
+.panel-heading .pannel-title.clean:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e084";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    padding-right: 15px;
+    color: green;         /* adjust as needed */
+}
+
+.panel-heading .pannel-title.dirty:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e083";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    padding-right: 15px;
+    color: red;         /* adjust as needed */
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.btn-pull {
+    color: #FFFFFF;
+    margin-top: -6px;
+    margin-right: 16px;
+    background-color: #83A656;
+    padding: 4px 32px;
+    border: 0px;
+}
+.btn-pull:hover{
+    background-color: #8CC63F;
+    color: #FFFFFF;
+}
+
+.wide {
+    width: 100%;
+}
+
+.btn-add {
+    background-color: #555D50;
+    color: #FFFFFF;
+    height: 38px;
+    border: 0px;
+    padding: 7px 17px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.footer {
+    color: #AAAAAA;
+    font-size: 10px;
+    width:100%;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-vertical-centered {
+  transform: translate(0, 20%) !important;
+  -ms-transform: translate(0, 20%) !important; /* IE 9 */
+  -webkit-transform: translate(0, 20%) !important; /* Safari and Chrome */
+  overflow:hidden;
+  opacity:0.4;
+filter:alpha(opacity=40);
+}
+
+a.nounder:link {text-decoration:none;}
+a.nounder:visited {text-decoration:none;}
+a.nounder:hover {text-decoration:none;}
+a.nounder:active {text-decoration:none;}
+
+    
