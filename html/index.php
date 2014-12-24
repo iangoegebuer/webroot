@@ -21,7 +21,7 @@
   <body>
     <?php include 'assets/navbar.html';?>
     <div id="main" class='container' style="width: 760px; margin: 0 auto">
-      <h1>Welcome to Pulley</h1>
+      <h1>Welcome to Pulley!</h1>
 <div class="panel panel-default">
         <div class="panel-body">
 <p><strong>What is Pulley?</strong></p>
