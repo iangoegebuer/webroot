@@ -50,7 +50,7 @@ h3 a {
   /* url('../img/header-bg.png'); */
   height: 80px;
   position: fixed;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 #nav { width: 410px; float: right; margin-top: 20px; }
@@ -91,7 +91,7 @@ h3 a {
 
 #slide1, #slide2{ width: 100%; }
 #slide1{
-  background-image: url('../img/test-bg.jpg');
+  background-image: url('../img/first-bg.jpg');
   background-position: 10% 70%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -105,14 +105,17 @@ h3 a {
 #slide2{
   background-color: #020;
   color: #333333;
-  height: 300px;
+  height: 400px;
   margin: 0 auto;
   overflow: hidden;
   padding: 200px 0;
 }
 
 #slide3{
-  background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+  background-image: url('../img/chris-bg.jpg');
+  background-position: 10% 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
   height: 600px;
   padding: 170px 0 0 0;
