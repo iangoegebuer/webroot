@@ -86,7 +86,10 @@ h3 {
 
 #slide1, #slide2{ width: 100%; }
 #slide1{
-  background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+  background-image: url('../img/test-bg.jpg');
+  background-position: 10% 70%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
   height: 600px;
   margin: 0;
